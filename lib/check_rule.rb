@@ -1,0 +1,3 @@
+class CheckRule
+
+end
