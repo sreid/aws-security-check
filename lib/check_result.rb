@@ -1,5 +1,10 @@
 class CheckResult
-  @result = nil
-  @resource_name = nil
+  attr :status, :resource_name, :extra
+
+  def initialize(status, resource, extra = {})
+    @status = status
+    @resource_name = resource
+    @extra = extra
+  end
 
 end
