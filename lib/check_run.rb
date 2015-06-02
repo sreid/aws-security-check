@@ -32,6 +32,11 @@ class CheckRun
     puts "---> Results"
     pp @source_data
     pp @run_results
+
+    @run_results.each do |rule|
+      puts rule.name + " : " + rule.status_to_s
+    end
+
   end
 
 end

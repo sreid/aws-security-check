@@ -7,4 +7,12 @@ class CheckResult
     @extra = extra
   end
 
+  def passed?
+    @status == :pass
+  end
+
+  def failed?
+    @status == :fail
+  end
+
 end
